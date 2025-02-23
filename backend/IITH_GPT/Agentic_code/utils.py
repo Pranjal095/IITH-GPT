@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent  # Moves up to root
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent  # Moves up to root
 load_dotenv(BASE_DIR / ".env")
 
 # Define Gemini API endpoint and API key

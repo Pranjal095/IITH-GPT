@@ -24,11 +24,10 @@ dotenv_path = BASE_DIR / ".env"
 load_dotenv(dotenv_path)
 
 from tavily import TavilyClient
-from langgraph.prebuilt import create_react_agent
 # from langgraph.checkpoint.memory import MemorySaver
 import torch
 from .utils import classify_query_with_gemini
-from .prompts import summarize, question_answering, fact_verification, search, exploration
+from .prompts import summarize, fact_verification, search, exploration
 # from lsa import clustered_rag_lsa, summarize_it
 
 
