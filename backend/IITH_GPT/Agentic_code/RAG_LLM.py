@@ -347,11 +347,11 @@ def process_query_with_validation(query, ollama_model='llama3.1', top_k=5):
         f"Subqueries: {', '.join(subqueries)}\n\n"
         f"Context:\n{combined_context}\n\n"
         "Guidelines:\n"
-        "1. Carefully analyse both the query and the context that has been provided to you. Do not lose relevant information while generating the response.\n"
+        "1. Carefully analyse both the query and the context that has been provided to you. Do not lose relevant contextual information while generating the response.\n"
         "2. Provide direct and concise answers while combining all relevant aspects related to the query.\n"
-        "3. Maintain a professional tone and do not mention the reasonings behind which you chose the content, only the content itself in a informative manner.\n"
-        "4. Address each subquery comprehensively without omitting details.\n"
-        "5. Provide precise and accurate responses, ensuring that only relevant information directly related to the query is included.\n"
+        "3. Respond in a highly friendly, natural and conversational manner to the query and avoid talking about context documents, related scores or any missing context/information.\n"
+        "4. Address each subquery comprehensively without omitting contextual details.\n"
+        "5. Provide precise and accurate responses, ensuring that only relevant information inquired for in the query is included.\n"
     )
     print(ollama_model)
     if query_type == "summarization":
